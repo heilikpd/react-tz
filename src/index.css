@@ -16,37 +16,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.submit--button{
+.appbutton{
   padding: 10px 15px;
   margin: 5px;
   color: white;
-  background-color: #4973FF;
   font-weight: bold;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
+.appbutton__close {
+  background-color: #bf2b53;
+}
+.appbutton__apply {
+  background-color: #4973FF;
+}
 .page--card {
   border: 1px solid lightgray;
   color: #4b4b4b;
   background-color: white;
-  padding:0 20px;
+  padding:10px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  width: 80vw;
+  width: 85vw;
+  margin-bottom: 5%;
 }
 .page--title {
-  /* чтобы линии не выходили за ширину блока заголовка */
   color: #7e879c;
   overflow: hidden;
   line-height: 45px;
   border-left: 5px solid #bbbbbb;
-  margin: 10px 20px;
+  margin: 10px 0;
   padding-left: 5px;
+  width: 99%;
 }
-
+.page--title-container {
+  margin: 30px 0;
+}
 .page--title:after {
   content: '';
   display: inline-block;
@@ -61,4 +69,77 @@ code {
 }
 .invoices-table {
   width: 100%;
+  margin: 0 auto 10px auto;
+  padding: 0;
+}
+.datainput {
+  border-radius: 4px;
+  height: 20px;
+  padding: 10px 15px;
+  border: 1px solid lightgray;
+}
+.form-card {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+.invoices-table--heading {
+  background-color: #F1F3F6;
+  height: 60px;
+  border-radius: 2px;
+}
+
+.form--inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50%;
+  margin: 0 20px;
+}
+.form--inputs-wrapper {
+  margin-top: 3%;
+  border: 1px solid lightgray;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.form-textarea {
+  height: 50px;
+  margin: 0 20px;
+}
+.form--button__left {
+  align-self: flex-end;
+}
+.form--wrapper {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input-wrapper {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+form {
+  width: 100%;
+}
+ label{
+  display:block;
+}
+ tr:last-child > * {
+   border-bottom: 2px solid #F1F3F6;
+ }
+@media screen and (max-width: 860px) {
+  .form--inputs {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
 }
