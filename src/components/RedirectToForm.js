@@ -8,7 +8,7 @@ export const RedirectToForm = () => {
     return (
         <div className="page--card">
             <h3>Actions</h3>
-            <button className="appbutton appbutton__apply" type="button" onClick={handleClick}>
+            <button className="appbutton appbutton--apply" type="button" onClick={handleClick}>
                 Add new
             </button>
         </div>

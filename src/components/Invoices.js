@@ -3,9 +3,10 @@ import React from 'react';
 export const Invoices=(props)=> {
     function parseChildren() {
         const children = [];
+
         if(props.invoices.length > 0){
             props.invoices.map((invoice, index) => (
-                    children.push(<tr style={{height: "50px"}} key={index}>
+                    children.push(<tr style={{ borderBottom:'1px solid lightgray'}} key={index}>
                         <td
                             style={{textAlign: "center", fontSize:".8rem"}}
                         >
@@ -30,7 +31,7 @@ export const Invoices=(props)=> {
                             style={{textAlign: "center"}}
                         >
                             <button
-                                className="appbutton appbutton__close"
+                                className="appbutton appbutton--close"
                                 onClick={() => props.onRemove(invoice.id)}
                             >
                                 Remove

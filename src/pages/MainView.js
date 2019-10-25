@@ -6,12 +6,13 @@ export const MainView = () => {
     const { invoices, loadInvoices, removeInvoice } = useContext(ServerContext);
     useEffect(() => {
         loadInvoices();
-    }, [loadInvoices]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     return (
         <Fragment>
             <div>
                 <div className="page--title-container">
-                    <h3 className="page--title">Invoices</h3>
+                    <h3 className="page--title">&nbsp;Invoices</h3>
                 </div>
                 <RedirectToForm />
                 <div className="page--card">

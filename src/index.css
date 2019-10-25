@@ -11,7 +11,9 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
+.container {
+  margin: 0 auto;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -25,10 +27,10 @@ code {
   border: none;
   cursor: pointer;
 }
-.appbutton__close {
+.appbutton--close {
   background-color: #bf2b53;
 }
-.appbutton__apply {
+.appbutton--apply {
   background-color: #4973FF;
 }
 .page--card {
@@ -49,7 +51,7 @@ code {
   line-height: 45px;
   border-left: 5px solid #bbbbbb;
   margin: 10px 0;
-  padding-left: 5px;
+  /* padding-left: 5px; */
   width: 99%;
 }
 .page--title-container {
@@ -106,7 +108,6 @@ code {
 
 }
 .form-textarea {
-  height: 50px;
   margin: 0 20px;
 }
 .form--button__left {
@@ -133,7 +134,23 @@ form {
  tr:last-child > * {
    border-bottom: 2px solid #F1F3F6;
  }
-@media screen and (max-width: 860px) {
+ .alert{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 50px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   align-items: center;
+   justify-content: center;
+   } 
+ .alert--red{
+  border:1px solid #811330;
+  color: white;
+  background-color: #cf5c73;
+ }
+
+@media screen and (max-width: 1000px) {
   .form--inputs {
     flex-direction: column;
     justify-content: space-between;
@@ -141,5 +158,22 @@ form {
   }
   .input-wrapper {
     width: 100%;
+
+  }
+
+  .form--wrapper {
+    height: 80vh
+  }
+  .form--inputs-wrapper {
+    height: 90%;
+  }
+}
+@media screen and (max-width: 520px) {
+  table {
+    font-size: .5rem;
+  }
+  .appbutton--close {
+    padding: 5px 7px;
+    font-size: 10px;
   }
 }
