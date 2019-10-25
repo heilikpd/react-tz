@@ -1,21 +1,23 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import {Route,BrowserRouter, Switch } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import { MainView } from './pages/MainView';
 import { CreateInvoiceView } from './pages/CreateInvoiceView';
-import {ServerState} from './context/server/ServerState'
+import { ServerState } from './context/server/ServerState';
+
 function App() {
   return (
-      <ServerState>
-    <BrowserRouter>
-    <div className="container">
-     <Switch>
-       <Route path={'/'} exact component={MainView}/>
-       <Route path={'/create'}  component={CreateInvoiceView}/>
-     </Switch>
-    </div>
-    </BrowserRouter>
-      </ServerState>
+    <ServerState>
+      <BrowserRouter>
+        <div className="container">
+          <Switch>
+            <Route path="/" exact component={MainView} />
+            <Route path="/create" component={CreateInvoiceView} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </ServerState>
   );
 }
 

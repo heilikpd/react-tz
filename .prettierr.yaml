@@ -1,7 +1,7 @@
-printWidth: 200     # Максимальное кол-во символов в строке
-tabWidth: 2         # Пробелов в Табе
-singleQuote: true   # Использовать одинарные кавычки
-trailingComma: all  # Использовать запятые где возможно
-arrowParens: always # Стрелочные ф-ии выглядят (x) => x
+printWidth: 200     
+tabWidth: 2         
+singleQuote: true   
+trailingComma: all  
+arrowParens: always 
 overrides:
-  - files: "*.js"   # Проверка файлов *.ts
+  - files: "*.js"  
