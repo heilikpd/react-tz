@@ -130,7 +130,7 @@ code {
 }
 
 .form--wrapper {
-  height: 50vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
